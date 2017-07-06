@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "virtualMachineName": {
+            "value": "nsvpx01"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_A2"
+        },
+        "adminUsername": {
+            "value": "gadmin2"
+        },
+        "virtualNetworkName": {
+            "value": "ARMTEST-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "nsvpx01700"
+        },
+        "networkSecurityGroupName": {
+            "value": "nsvpx01-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "armtestdiag711"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/armtestdiag711"
+        },
+        "addressPrefix": {
+            "value": "10.1.3.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.1.3.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "nsvpx01-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        }
+    }
+}
