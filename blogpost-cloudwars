@@ -1,4 +1,4 @@
-Cloud Wars - AWS vs Azure vs IBM Cloud vs GCP
+Cloud Wars
 
 Looking back and 2017 there has not been as much activity as I've planned on my blog and one of the main reasons for this is because I have been quite caught up in work. 
 Again one of the main reasons is because my work takes me back and forth between multiple produts, platforms and customer cases. It can be from a DevOps project on Azure, to IoT project on GCP 
@@ -6,13 +6,52 @@ to a DR solution on IBM and a HPC setup on AWS. So after pluging into most of th
 on their strengts and weaknesses. So this post will reflect my personal expirences with the platform and showing some of the core capabilities, since one of the most frequent questions I get at work is
 "Where do I start? and why should I choose X over Y?"
 
-First of I would like say that cloud is NOT the solution for everything! You should take into consideration on what the core properties for a public cloud solution actually is before looking into on
-you can utilize it. Cloud has its main usecases if you can a service or application that can be dynamic. So let's take a closer look at the different vendors from an overview.
+First of I would like say that cloud is NOT the solution for everything! You should take into consideration on what the core properties for a public cloud solution actually is before looking into a cloud solution.
+So let us start with an overview of the four major cloud platform on the market. (Also note that I've been part on the technical comparison on the major cloud platform on whatmatrix.com which you can see here
+--> https://www.whatmatrix.com/comparison/Public-Cloud-Platforms#) and ill get back into a more technical comparison on part two of this blog series and focus a bit more into some different levels 
+such as IaaS/Bare-Metal, Identity, PaaS, Bigdata & IoT, ML and Containers. 
 
 IBM Cloud: 
+Historically IBM has been focusing a lot on IaaS pieces, with its Softlayer platform, which has been IBM's public cloud offering on Iaas and bare-metal offering. On the other hand, IBM has been
+building up Bluemix as well which has been focusing on the PaaS services which is based upon CloudFoundry. This is also where ML/AI service Watson has its home as well. The problem is that Public Cloud on IBM has been available two different
+places both Bluemix and Softlayer, and also IBM has different regions where they other both but some places where they only offered IaaS and not the other. This has been really confusing at times, but
+now IBM is focusing alot on merging these two platforms to provide all cloud functionality from what is now called IBM Cloud.
+
+IBM unlike the other competitors when it comes to PaaS services is mostly building their own services using third party open-source tools. Like for instance Serverless feature in IBM is based upon 
+Apache OpenWhisk unlike Azure which as Functions, Amazon which has Lambda and so on. Also they have other IaaS options based upon VMware and Veeam for instance where they are alot further in the race 
+against AWS. 
+
+Also one of the things I value when working with a platform is the community around it, especially on stack overflow and other social media channels such as Twitter and such, unfortunately IBM has the smallest community
+based upon statistics I've seen on Stackoverflow, Social media and looking at meetups in the Nordics. 
+
+When it comes to PaaS Services even if IBM is focusing alot on reusing open-source platforms such as CloudFoundry also they are standardizing on Kubernetes, they are nowhere the same functionality offerings as the others in the marked. The core 
+strenght of IBM Cloud at the moment as I see it is the IaaS/Bare-metal and VMware offering that they have. One of the core strenghts they also have is the focus on Private Cloud where they can provide a scaleable
+PaaS solution for on-premises solutions. 
+
 
 Google Cloud Platform:
+To be honest I haven't done a lot of work on GCP before I started working with it about 1,5 year ago, and what I see is that Google's cloud platform is pretty similar to their search engine, focus on ease of use and speed.
+Also I've seen that in those cases I've been working on GCP is the cheapest option between the four, also that Google offers the fastest (compute, storage, network) infrastructure as well. Don't take my word for it, see 
+for yourself --> https://www.cloudbenchmark.com/ 
 
-Amazon Web Services:
+Also Google offers the most flexible IaaS offering, where we can define custom VM instances, any type of disk configuration and we can also use Skylake processors and multiple GPU offerings as well. 
+So I can easily say that Google has the most impressive core infrastructure. However Google does not have any baremetal offerings such as IBM has with Softlayer, and also compared with Microsoft and IBM, Google has no
+private cloud offering and have therefore went into a partnership with Nutanix in order to bridge the gap --> https://www.nutanix.com/press-releases/2017/06/28/nutanix-teams-google-cloud-fuse-cloud-environments-enterprise-apps/
+But since they do not have any form of development towards private or existing customers running on-prem they can focus their energy on their public cloud offering. 
 
-Microsoft Azure:
+Also Google is missing some of the PaaS services compared to what AWS and Azure is providing. I think that Google's strategy is not to provide a bunch of different PaaS services, but to streamline on a few selected services.
+I also belive that one of the "weaknesses" that Google currently has, is the ecosystem surrouding it. Many third party companies and vendors today support or have one form of integration with AWS and Azure, but not with Google.
+
+Another thing with Google is the community. Unlike IBM there is alot more meetups in the noridics in particular and many partners focusing on it as well, but little activity on social media.
+The last thing I want to mention is since Google is the home of Kubernetes they also have the best managed container engine for it on GCP, but unlike Azure for instance they do not have support for other 
+orchestration frameworks such as Swarm or DC/OS as a service. Also with the release of Azure Container Instances and AWS Fargate now released into the wild as well which focuses more on containers itself and now on managing a cluster consisting 
+of a set of virtual machines underneath changes the game a little, so I hope that Google will release something here soon. 
+
+Microsoft Azure
+So much has happened in Azure the last year, they have announced multiple new regions (which makes Microsoft the one vendor with the most regions, but not the largest) to cover more ground. We can also see based upon all the announcements from 
+Microsoft Ignite is that their core focus in Azure, Azure and Azure moving forward, with little to no announcements around their current private cloud core products. Also more focus has shifted into Private/Public Cloud offerings with Azure Stack as well. 
+
+Microsoft now provides an impressive list of virtual machine instances (however not as flexible and scaleable as the other vendors) and a impressive list of different PaaS services and that they have done a great job on the container focus in Azure.
+Based upon all the announcements from 2017, I belive that Microsoft has done the largest investment into containers & devops features of the four vendors. Microsoft is also building close integrations with existing software that they sell to customers today
+to make it east for them to move resources to Microsoft Azure moving forward, and for some customers make it the only logical choice. I can also see based upon ETL tools that they provide to make it easy to 
+get data from different sources and different services from PaaS and PowerBI as a visualization tool 
