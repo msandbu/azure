@@ -1,0 +1,18 @@
+Cloud Wars - AWS vs Azure vs IBM Cloud vs GCP
+
+Looking back and 2017 there has not been as much activity as I've planned on my blog and one of the main reasons for this is because I have been quite caught up in work. 
+Again one of the main reasons is because my work takes me back and forth between multiple produts, platforms and customer cases. It can be from a DevOps project on Azure, to IoT project on GCP 
+to a DR solution on IBM and a HPC setup on AWS. So after pluging into most of these platforms I've decided to start my blog with 2018 on some fresh perspectives on the major cloud platforms and focus
+on their strengts and weaknesses. So this post will reflect my personal expirences with the platform and showing some of the core capabilities, since one of the most frequent questions I get at work is
+"Where do I start? and why should I choose X over Y?"
+
+First of I would like say that cloud is NOT the solution for everything! You should take into consideration on what the core properties for a public cloud solution actually is before looking into on
+you can utilize it. Cloud has its main usecases if you can a service or application that can be dynamic. So let's take a closer look at the different vendors from an overview.
+
+IBM Cloud: 
+
+Google Cloud Platform:
+
+Amazon Web Services:
+
+Microsoft Azure:
